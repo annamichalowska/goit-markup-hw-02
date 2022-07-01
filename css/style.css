@@ -1,5 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
-  font-family: Roboto;
+  font-family: "Roboto", "Raleway", sans-serif;
   color: black;
   position: relative;
   width: 1600px;
@@ -7,44 +11,58 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-header {
+.header-block {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   width: 1600px;
-  height: 15px;
-}
-a {
-  text-decoration: none;
-  color: black;
+  height: 80px;
 }
 .line {
-  position: absolute;
   width: 1600px;
   left: 0px;
   border: 1px solid #ececec;
 }
-.header-table {
+.header-items {
+  display: flex;
+  align-items: center;
   padding-left: 215px;
   width: 1600px;
+  height: 80px;
 }
 .logo-first {
+  display: flex;
   font-size: 26px;
   font-family: Raleway;
   text-decoration: none;
   font-weight: 700;
   line-height: 31px;
   letter-spacing: 0.03em;
-  padding-right: 93px;
+  margin-right: 93px;
+  color: black;
+}
+.navigation-header {
+  display: flex;
+  margin-left: 0;
+  margin-right: 321px;
+}
+.navigation-header-description {
+  padding-left: 46px;
+  color: #212121;
+  text-decoration: none;
+}
+.navigation-header-description:focus,
+.navigation-header-description:hover {
+  color: #2196f3;
 }
 .header-address {
-  text-align: right;
-  padding-right: 227px;
+  display: flex;
   text-decoration: none;
 }
 .header-address-description {
+  display: flex;
   margin-left: 50px;
   color: #757575;
   text-decoration: none;
@@ -52,10 +70,6 @@ a {
 .header-address-description:hover,
 .header-address-description:focus {
   color: #2196f3;
-}
-main {
-  margin-left: auto;
-  margin-right: auto;
 }
 .front-item {
   background-color: #2f303a;
@@ -74,7 +88,9 @@ main {
   margin-left: 452px;
   margin-right: 452px;
 }
-.front-button {
+.front-service {
+  display: flex;
+  justify-content: center;
   color: white;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -84,69 +100,79 @@ main {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  display: flex;
   align-items: center;
-  padding-left: 42px;
   letter-spacing: 0.06em;
   margin-bottom: 200px;
   margin-left: 700px;
+  text-decoration: none;
 }
-.table-index {
+.description-index {
+  display: flex;
   letter-spacing: 0.03em;
   font-size: 14px;
   margin-left: 215px;
   margin-right: 215px;
   margin-top: 94px;
+  letter-spacing: 0.03em;
+  margin-bottom: 94px;
 }
-.table-index-tittle-first {
+.description-index > ul {
+  display: flex;
+  list-style-type: none;
+}
+.index-lorem-title {
+  display: block;
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
   color: #212121;
+  margin-bottom: 10px;
+  margin-left: 30px;
 }
-.table-index-tittle {
-  font-weight: 700;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: #212121;
-  padding-left: 30px;
+.index-lorem-title:first-child {
+  margin-left: 0;
 }
-.table-index-description-first {
-  line-height: 24px;
-  letter-spacing: 0.03em;
+.index-lorem-description {
   color: #757575;
-  text-align: justify;
-  padding-top: 10px;
-}
-.table-index-description {
   line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #757575;
-  text-align: justify;
-  padding-left: 30px;
-  padding-top: 10px;
 }
-h2 {
+.index-lorem-margin {
+  margin-left: 30px;
+}
+.index-lorem-margin:nth-child(1) {
+  margin-left: 0;
+}
+.profession-title {
   text-align: center;
   margin-bottom: 50px;
-  padding-top: 94px;
 }
-.table-profession {
+.profession {
   margin-left: 215px;
   margin-bottom: 94px;
 }
-.table-profession-img {
-  padding-right: 30px;
+.profession img {
+  padding-left: 30px;
+}
+.profession img:nth-child(1) {
+  padding-left: 0;
 }
 .team {
   background-color: #f5f4fa;
 }
-.table-team {
+.team-items {
+  display: flex;
   margin-left: 215px;
+  margin-right: 215px;
+  justify-content: space-between;
+  padding-right: 0;
+}
+.team-title {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
 }
 .team-name {
   margin-top: 30px;
-  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -159,10 +185,10 @@ h2 {
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
+  margin-top: 10px;
 }
-.table-team-block {
+.team-block {
   width: 270px;
-  height: 368px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -170,7 +196,9 @@ h2 {
   text-align: center;
   margin-bottom: 94px;
   margin-left: 0px;
-  margin-right: 30px;
+}
+.team-block :nth-child(4) {
+  margin-right: 0;
 }
 .navigation-index {
   text-decoration: none;
@@ -180,22 +208,11 @@ h2 {
   letter-spacing: 0.02em;
   color: #212121;
 }
-.navigation-header-description {
-  padding-left: 46px;
-  color: #212121;
-  text-decoration: none;
-}
-.navigation-header-description:focus,
-.navigation-header-description:hover {
-  color: #2196f3;
-}
 .navigation-portfolio {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.03em;
-  color: #212121;
-  text-decoration: none;
   margin-top: 100px;
   margin-bottom: 56px;
   margin-left: 510px;
@@ -209,19 +226,26 @@ h2 {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  text-decoration: none;
   margin-left: 8px;
+}
+.navigation-portfolio-buttons a {
+  text-decoration: none;
+  color: #212121;
 }
 .navigation-portfolio-buttons:focus,
 .navigation-portfolio-buttons:hover {
   background-color: #2196f3;
+  color: white;
 }
-.table-portfolio {
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   margin-bottom: 94px;
   margin-left: 215px;
-  border-spacing: 30px;
+  margin-right: 185px;
 }
-.table-portfolio-blocks {
+.portfolio-blocks {
   border: 1px solid #eeeeee;
 }
 .portfolio-examples {
@@ -242,7 +266,7 @@ h2 {
   color: #757575;
   line-height: 30px;
 }
-footer {
+.footer-items {
   color: white;
   background-color: #2f303a;
   padding-top: 60px;
@@ -262,7 +286,7 @@ footer {
 .web {
   color: #2196f3;
 }
-address {
+.footer-items address {
   padding-top: 20px;
   line-height: 24px;
   font-size: 14px;
