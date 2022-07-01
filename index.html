@@ -18,31 +18,31 @@
     />
   </head>
   <body>
-    <header>
-      <table class="header-table">
-        <tr>
-          <td>
-            <a href="index.html" class="logo-first"
-              ><span class="web">Web</span>Studio</a
+    <header class="header-block">
+      <div class="header-items">
+        <div>
+          <a href="index.html" class="logo-first"
+            ><span class="web">Web</span>Studio</a
+          >
+        </div>
+        <div>
+          <nav class="navigation-header">
+            <a href="#" class="navigation-header-description">Agencja</a>
+            <a href="portfolio.html" class="navigation-header-description"
+              >Portfolio</a
             >
-          </td>
-          <td>
-            <nav class="navigation-header">
-              <a href="#" class="navigation-header-description">Agencja</a>
-              <a href="portfolio.html" class="navigation-header-description"
-                >Portfolio</a
-              >
-              <a href="#" class="navigation-header-description">Kontakt</a>
-            </nav>
-          </td>
-          <td class="header-address">
-            <a href="info@devstudio.com" class="header-address-description"
-              >info@devstudio.com</a
-            >
-            <a href="+48 111 111 111" class="header-address-description">+48 111 111 111</a>
-          </td>
-        </tr>
-      </table>
+            <a href="#" class="navigation-header-description">Kontakt</a>
+          </nav>
+        </div>
+        <div class="header-address">
+          <a href="mailto:info@devstudio.com" class="header-address-description"
+            >info@devstudio.com</a
+          >
+          <a href="tel:+48111111111" class="header-address-description"
+            >+48 111 111 111</a
+          >
+        </div>
+      </div>
       <hr class="line" />
     </header>
     <main>
@@ -50,128 +50,115 @@
         <h1 class="front-item-description">
           Efektywne rozwiązania dla waszego biznesu
         </h1>
-        <button class="front-button"><a href="#">Zamów usługę</a></button>
+        <a href="#" class="front-service">Zamów usługę</a>
       </div>
-      <table class="table-index">
-        <tr>
-          <td>
-            <h3 class="table-index-tittle-first">Lorem ipsum</h3>
-            <p class="table-index-description-first">
+      <section class="description-index">
+        <ul>
+          <li class="index-lorem-margin">
+            <h3 class="index-lorem-title">Lorem ipsum</h3>
+            <p class="index-lorem-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
-          </td>
-          <td>
-            <h3 class="table-index-tittle">Lorem ipsum</h3>
-            <p class="table-index-description">
+          </li>
+          <li class="index-lorem-margin">
+            <h3 class="index-lorem-title">Lorem ipsum</h3>
+            <p class="index-lorem-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
-          </td>
-          <td>
-            <h3 class="table-index-tittle">Lorem ipsum</h3>
-            <p class="table-index-description">
+          </li>
+          <li class="index-lorem-margin">
+            <h3 class="index-lorem-title">Lorem ipsum</h3>
+            <p class="index-lorem-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
-          </td>
-          <td>
-            <h3 class="table-index-tittle">Lorem ipsum</h3>
-            <p class="table-index-description">
+          </li>
+          <li class="index-lorem-margin">
+            <h3 class="index-lorem-title">Lorem ipsum</h3>
+            <p class="index-lorem-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
-          </td>
-        </tr>
-      </table>
-      <h2>Czym się zajmujemy</h2>
-      <table class="table-profession">
-        <tr>
-          <td class="table-profession-img">
-            <img
-              src="images\code.jpg"
-              alt="code"
-              width="370px"
-              height="294px"
-            />
-          </td>
-          <td class="table-profession-img">
-            <img
-              src="images\aplication.jpg"
-              alt="aplication"
-              width="370px"
-              height="294px"
-            />
-          </td>
-          <td>
-            <img
-              src="images\design.jpg"
-              alt="design"
-              width="370px"
-              height="294px"
-            />
-          </td>
-        </tr>
-      </table>
+          </li>
+        </ul>
+      </section>
+      <h2 class="profession-title">Czym się zajmujemy</h2>
+      <div class="profession">
+        <img src="images/code.jpg" alt="code" width="370" height="294" />
+        <img
+          src="images/aplication.jpg"
+          alt="aplication"
+          width="370"
+          height="294"
+        />
+        <img src="images/design.jpg" alt="design" width="370" height="294" />
+      </div>
       <div class="team">
-        <h2>Nasz zespół</h2>
-        <table class="table-team">
-          <tr>
-            <td class="table-team-first-block">
-              <figure class="table-team-block">
-                <img
-                  src="images\product.jpg"
-                  alt="Product Designer"
-                  width="270px"
-                  height="260px"
-                />
-                <figcaption class="team-name">John Doe<p class="team-profession">Product Designer<p></figcaption>
-              </figure>
-            </td>
-            <td>
-              <figure class="table-team-block">
-                <img
-                  src="images\frontend.jpg"
-                  alt="Frontend Developer"
-                  width="270px"
-                  height="260px"
-                />
-                <figcaption class="team-name">John Doe<p class="team-profession">Frontend Developer</p></figcaption>
-              </figure>
-            </td>
-            <td>
-              <figure class="table-team-block">
-                <img
-                  src="images\marketing.jpg"
-                  alt="Marketing"
-                  width="270px"
-                  height="260px"
-                />
-                <figcaption class="team-name">John Doe<p class="team-profession">Marketing<p></figcaption>
-              </figure>
-            </td>
-            <td>
-              <figure class="table-team-block">
-                <img
-                  src="images\designer.jpg"
-                  alt="Ul Designer"
-                  width="270px"
-                  height="260px"
-                />
-                <figcaption class="team-name">John Doe<p class="team-profession">Ul Designer</p></figcaption>
-              </figure>
-            </td>
-          </tr>
-          </tr>
-        </table>
+        <div>
+          <h2 class="team-title">Nasz zespół</h2>
+        </div>
+        <div class="team-items">
+          <figure class="team-block">
+            <img
+              src="images/product.jpg"
+              alt="Product Designer"
+              width="270"
+              height="260"
+            />
+            <figcaption class="team-name">
+              John Doe
+              <p class="team-profession">Product Designer</p>
+            </figcaption>
+          </figure>
+          <figure class="team-block">
+            <img
+              src="images/frontend.jpg"
+              alt="Frontend Developer"
+              width="270"
+              height="260"
+            />
+            <figcaption class="team-name">
+              John Doe
+              <p class="team-profession">Frontend Developer</p>
+            </figcaption>
+          </figure>
+          <figure class="team-block">
+            <img
+              src="images/marketing.jpg"
+              alt="Marketing"
+              width="270"
+              height="260"
+            />
+            <figcaption class="team-name">
+              John Doe
+              <p class="team-profession">Marketing</p>
+              <p></p>
+            </figcaption>
+          </figure>
+          <figure class="team-block">
+            <img
+              src="images/designer.jpg"
+              alt="Ul Designer"
+              width="270"
+              height="260"
+            />
+            <figcaption class="team-name">
+              John Doe
+              <p class="team-profession">Ul Designer</p>
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </main>
-    <footer>
+    <footer class="footer-items">
       <a href="#" class="logo-second"><span class="web">Web</span>Studio</a>
       <address>
         m. Warszawa, Aleje Jerozolimskie 21<br />
-        <a href="info@example.com" class="email">info@example.com</a><br />
-        <a href="+48 111 111 111" class="phone">+48 111 111 111</a>
+        <a href="mailto:info@example.com" class="email">info@example.com</a
+        ><br />
+        <a href="tel:+48111111111" class="phone">+48 111 111 111</a>
       </address>
     </footer>
   </body>
